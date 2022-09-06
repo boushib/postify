@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/boushib/go-blog/config"
-	"github.com/boushib/go-blog/routes"
+	"github.com/boushib/postify/config"
+	"github.com/boushib/postify/routes"
 )
 
 func main() {

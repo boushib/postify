@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/boushib/go-blog/controllers"
+	"github.com/boushib/postify/controllers"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
 )

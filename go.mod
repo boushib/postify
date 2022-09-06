@@ -1,4 +1,4 @@
-module github.com/boushib/go-blog
+module github.com/boushib/postify
 
 go 1.18
 

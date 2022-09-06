@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/boushib/go-blog/config"
-	"github.com/boushib/go-blog/models"
+	"github.com/boushib/postify/config"
+	"github.com/boushib/postify/models"
 	"github.com/gorilla/mux"
 )
 
-func GetPosts(w http.ResponseWriter, r *http.Request) {
+func GetPosts(w http.ResponseWriter, _ *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var posts []models.Post
 	query := `SELECT id, title, content FROM posts`
