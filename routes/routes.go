@@ -17,6 +17,7 @@ func InitRouter() {
 	router.HandleFunc("/api/v1/posts", controllers.CreatePost).Methods("POST")
 	router.HandleFunc("/api/v1/posts", controllers.UpdatePost).Methods("PUT")
 	router.HandleFunc("/api/v1/posts", controllers.DeletePost).Methods("DELETE")
+	router.HandleFunc("/api/v1/login", controllers.Login).Methods("POST")
 	println("Server running on port " + envMap["PORT"] + "...")
 	log.Fatal(http.ListenAndServe(":"+envMap["PORT"], router))
 }
